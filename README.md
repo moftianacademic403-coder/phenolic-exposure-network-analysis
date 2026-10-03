@@ -1,8 +1,6 @@
 # Phenolic Exposure–Effect Network Analysis
 
-Reproducible Python workflow supporting the manuscript:
 
-> **Integrated Biomonitoring of BPA, Triclosan, and Triclocarban in Municipal Sanitation Workers: A Stability-Validated Network Analysis of Multi-System Biomarker Associations**
 
 ## Overview
 
