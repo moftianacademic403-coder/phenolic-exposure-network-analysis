@@ -364,7 +364,6 @@ def plot_network(
         "RBC": (1.68, -1.05), "8-OHdG": (0.20, 1.40),
         "TNF-α": (1.30, 1.25), "IL-6": (2.25, 0.62),
     }
-    # Fallback positions make the function robust if a different nominal node appears.
     missing_nodes = [n for n in graph.nodes if n not in positions]
     if missing_nodes:
         fallback = nx.spring_layout(graph.subgraph(missing_nodes), seed=RANDOM_SEED)
@@ -570,7 +569,6 @@ def export_excel_tables(
             "align": "center", "valign": "vcenter",
         })
 
-        # Table S4
         sheet = workbook.add_worksheet("Table S4")
         writer.sheets["Table S4"] = sheet
         sheet.merge_range("A1:E1", "Table S4. Connectivity measures of biomarkers in network", title_fmt)
